@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+ Webshop
+{% endblock %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static "webshop/index.css" %}" />
+{% endblock %}
+
+
+{% block content %}
+  <h1>Welcome to Webshop!</h1>
+
+  <section id="products">
+    <h2>Products:</h2>
+
+    <ul>
+      {% for product in products %}
+      <p>{{ product.name }} {{ product.price }}€</p>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <div>
+    <form>
+
+    </form>
+  </div>
+{% endblock %}
+</html>

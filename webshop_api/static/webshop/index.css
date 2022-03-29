@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+  color: black;
+}
+
+h2 {
+  margin: 0;
+  margin-left: 2em;
+}
+
+#products {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 5rem;
+}
+
+#products ul {
+  display: block;
+  position: absolute;
+  margin: 2em;
+  padding: 10px;
+  color: red;
+}
+
+#products ul p {
+  display: block;
+  position: static;
+  margin: 0.5em;
+  padding: 10px;
+  color: red;
+  border: 1px solid black;
+}
